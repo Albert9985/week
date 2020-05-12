@@ -1,0 +1,213 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+body{
+  line-height: 1.5;
+}
+
+.hamburger{
+  display: none;
+}
+.navbar{
+  padding: 30px 88px;
+  background-color: #aa0601;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar>img{
+  width: 100%;
+  height: auto;
+}
+.menu{
+  display: flex;
+  font-size:20px;
+  justify-content: space-between;
+}
+.menu li a{
+  padding:    0 32px;  /*算的跟參考上面不一樣*/
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+/*navbarPC結束*/
+
+/*bannerPC開始*/
+.banner{
+  background-image: url(img/68.png);
+  height: 840px;
+  background-size: cover;
+  background-position: center center; 
+  padding-right:360px;
+  padding-top: 350px; /*字這邊不知道怎麼正確排*/
+  margin-bottom: 40px;
+}
+
+
+.banner-slogan-sm{
+  font-size: 36px;
+}
+.banner-slogan{
+  font-size: 64px;
+  color:#650300;
+  text-align: right;
+}
+/*bannerPC結束*/
+
+/*介紹開始*/
+.introduce{
+  background-color: #AA06010D;
+  padding: 64px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+}
+.introduce h2{
+  color:#650300;
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 64px;
+}
+.introduce-list{
+  display: flex;
+  justify-content: space-between;
+}
+.introduce-list>img{
+    display: block;
+    margin: 0 auto;
+}
+.introduce-list>li{
+  text-align: center;
+  margin-right: 12px;
+  width: 25%;
+}
+.introduce-list>li>img{
+  margin-bottom: 40px;
+}
+.introduce-list>li>h3{
+  margin-bottom: 4px;
+  color:#650300;
+  font-size: 24px;
+  font-weight: bold;
+}
+.introduce-list>li>p{
+  text-align-last: left;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/*經典開始*/
+.classic{
+  max-width: 1200px;
+  padding: 0 360px;
+  margin: 0 auto;
+}
+.classicImg{
+  width: 792px;
+  height: 320px;
+}
+.classicImg-sm{
+  width: 48px;
+  height: 37px;
+}
+.d-flex{
+  display: flex;
+}
+.classicText{
+  font-size: 48px;
+  padding-top: 100px;
+}
+
+
+@media (max-width:768px){ 
+  /*813px字就會掉下不知道怎麼解決*/
+  .menu{
+    max-width: 411px; /*算的跟參考上面不一樣*/
+  }
+  .menu li a{
+    padding: 0 10px; /*算的跟參考上面不一樣*/
+  }
+  .navbar{
+    padding: 30px 48px;
+  }
+  /*banner區塊開始*/
+  .container{
+    max-width: 672px; /*算的跟參考上面不一樣*/
+  }
+  .banner{
+    padding-right:48px;
+    padding-top: 400px;
+  }
+  .banner-slogan-sm{
+    font-size: 20px;
+  }
+  .banner-slogan{
+    font-size: 48px;   /*字還是會跳行*/
+  }
+  /*banner區塊結束*/
+
+  /*introduce開始*/
+
+  
+  .introduce h2{
+    font-size: 32px;
+    margin-bottom: 32px;
+  }
+  .introduce-list{
+    flex-wrap: wrap;
+  }
+  .introduce-list li{
+    width: 45%; /*感覺是要50%才可以但我設定五十趴會跑*/
+  }
+}
+
+@media (max-width:375px){
+
+}

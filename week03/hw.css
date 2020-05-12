@@ -1,0 +1,336 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* *{
+  outline: black 1px solid;
+} */
+/* a{
+  text-decoration: none;
+} */
+/* .df{
+  display: flex;
+} */
+* {
+  box-sizing: border-box;
+}
+
+.header{
+  padding: 30px 88px;
+  background-color: #aa0601;
+  display: flex;
+  justify-content: space-between;
+}
+/* .header img{
+  display: block;
+  width: 100%;
+  height: auto;
+} */
+.menu{
+  display: flex;
+  justify-content: space-between;
+  width: 412px;
+}
+.menu li a {
+  color: white;
+  font-size: 20px;
+  line-height: 1.5;
+  text-decoration: none;
+}
+@media (max-width:992px){
+  .header{
+    padding: 30px 48px;
+  }
+  .menu{
+    max-width: 340px;
+  }
+}
+.banner{
+  background-image: url(img/68.png);
+  height: 840px;
+  background-size: cover;
+  background-position:center center;
+  background-repeat: no-repeat;
+  /*padding-right: 360px; 這行無法對齊原稿*/
+}
+.banner-container{
+  margin: 0 auto;
+  max-width: 1200px;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: right;
+}
+.slogan{
+  font-size: 64px;
+  color: #650300;
+}
+.slogan-sm{
+  font-size:36px;
+}
+ @media (max-width:992px){
+  .banner{
+    padding-right: 48px;
+  }
+  .slogan{
+    font-size: 48px;
+  }
+  .slogan-sm{
+    font-size: 20px;
+  }
+}
+.service{
+  padding: 64px 0;
+  background-color: #AA06010D;
+  text-align: center;
+}
+.service-text{
+  font-size: 48px;
+  line-height: 1.5;
+  color: #650300;
+}
+.service-container{
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.service-ul{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.service-list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 25%;
+}
+.glasses{
+  height: 114.98px;
+}
+@media (max-width:992px){
+  .service{
+    padding: 0 6.75%;
+  }
+  .service-list{
+    width: 50%;
+  }
+}
+
+
+.classic{
+  text-align: center;
+  padding: 0 18.75%;
+}
+.classic-text{
+  color: #650300;
+  font-size: 48px;
+  line-height: 1.5;
+}
+.classic img{
+  max-width: 100%;
+  height: auto;
+}
+.classic-container{
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.classic-wrap{
+  display: flex;
+}
+.classic-center{
+  align-items: center;
+  display: flex;
+}
+.classic-center p{
+  font-weight: bold;
+  color: #AA0601;
+  font-size: 48px;
+  line-height: 1.5;
+}
+.classic-end{
+  justify-content:flex-end;
+}
+@media (max-width:992px){
+  .classic-container{
+    padding: 0 6.25%;
+    display: block;
+  }
+  .classic-reverse{
+    flex-direction: row-reverse;
+  }
+  .classic-text{
+    font-size: 28px;
+  }
+}
+/*
+.collaboration{
+  
+  text-align: center;
+}
+.collaboration-wrap{
+  display: flex;
+}
+.collaboration-container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.bottom{
+  display: flex;
+}*/
+.contact {
+  background-color: #AA06010D;
+}
+.contact-text{
+  font-size: 16px;
+  line-height: 1.5;
+}
+.contact-container h2{
+  text-align: center;
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+.contact-container{
+  max-width: 792px;
+  margin: 0 auto;
+  padding: 64px 0 92px 0;
+}
+form{
+  display: block;
+}
+label{
+  display: block;
+}
+input[type="text"]{
+  width:100%;
+  line-height:1.5;
+}
+.btn-1{
+  width: 180px;
+  height: 54px;
+  color: white;
+  background-color:#AA0601;
+}
+textarea{
+  display: block;
+  width: 100%;
+}
+input[type="checkbox"]{
+  margin-right: 4px;
+}
+.df{
+  display: flex;
+}
+.btn{
+  text-align: center;
+}
+
+
+.footer{
+  background-color:#AA0601;
+  height: 338px;
+  color: white;
+  
+}
+.footer-container{
+  max-width:1200px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+.footer-top{
+  border-bottom: 1px solid white;
+}
+.footer-wrap{
+  padding-top: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-text{
+  font-size: 36px;
+  line-height: 1.5;
+}
+.footer-bottom{
+  justify-content: space-between;
+  align-items: center;
+}
+.pt-3{
+  padding-top: 12px;
+}
+
+.mr-3{
+  margin-right: 12px;
+}
+.mr-6{
+  margin-right: 24px;
+}
+.mr-12{
+  margin-right: 48px;
+}
+.mr-9{
+  margin-right: 36px;
+}
+.mb-4{
+  margin-bottom: 32px;
+}
+.mb-2{
+  margin-bottom: 16px;
+}
+.mb-3{
+  margin-bottom: 24px;
+}
+.mr-62{
+  margin-right: 62px;
+}
+.mr-2{
+  margin-right: 8px;
+}
+.mb-5{
+  margin-bottom: 20px;
+}
